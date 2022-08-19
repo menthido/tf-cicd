@@ -26,7 +26,7 @@ provider "azurerm" {
 
 resource "azurerm_resource_group" "rg" {
   name     = "sk-all-euw-deployment-rg"
-  location = "eu-west"
+  location = "westeurope"
 }
 
 provider "azuread" {
