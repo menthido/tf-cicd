@@ -24,8 +24,10 @@ provider "azurerm" {
     features {}
 }
 
-
-
+resource "azurerm_resource_group" "rg" {
+  name     = "sk-all-euw-deployment-rg"
+  location = "eu-west"
+}
 
 provider "azuread" {
     version         =   "=2.27.0"
