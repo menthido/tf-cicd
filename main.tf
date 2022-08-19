@@ -10,6 +10,12 @@ terraform {
             source  =   "hashicorp/azurerm"
         }
     }
+    backend "azurerm" {
+        resource_group_name = "sk-all-euw-deployment-rg"
+        storage_account_name = "skdeployment0001sa"
+        container_name = "tfstate"
+        key = "terraform.tfstate"
+    }    
 }
 
 # Provider Block
