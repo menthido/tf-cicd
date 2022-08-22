@@ -21,7 +21,7 @@ terraform {
 # Provider Block
 
 provider "azurerm" {
-    version         =   "=3.18.0"
+    version         =   "3.18.0"
     client_id       =   var.client_id
     client_secret   =   var.client_secret
     subscription_id =   var.subscription_id
@@ -32,7 +32,7 @@ provider "azurerm" {
 
 
 provider "azuread" {
-    version         =   "=2.27.0"
+    version         =   "2.27.0"
     client_id       =   var.client_id
     client_secret   =   var.client_secret
     tenant_id       =   var.tenant_id
